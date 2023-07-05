@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>SLEC - Sorcerers Long Exposure Calculator</title>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="pico.min.css">
-
-</head>
-<body>
-  <div id="main"></div>
-  <script type="module">
-    import init from "/./assets/dioxus/SLEC.js";
-    init("/./assets/dioxus/SLEC_bg.wasm").then(wasm => {
-      if (wasm.__wbindgen_start == undefined) {
-        wasm.main();
-      }
-    });
-  </script>
+<html><head>
+    <link rel="stylesheet" href="/pico.min-f6e091bf89307137.css">
   
-</body>
-</html>
+<link rel="preload" href="/SLEC-d1c4ae3beb347764_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/SLEC-d1c4ae3beb347764.js"></head>
+<body>
+<script type="module">import init from '/SLEC-d1c4ae3beb347764.js';init('/SLEC-d1c4ae3beb347764_bg.wasm');</script></body></html>
